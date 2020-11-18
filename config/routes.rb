@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'airlock#index'
 
   resources :posts
-  get 'post/create'
+
 
 
 
