@@ -7,6 +7,7 @@ RSpec.describe "Airlocks", type: :request do
       get "/airlock/index"
       expect(response).to have_http_status(:success)
     end
+
   end
 
 end

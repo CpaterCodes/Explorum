@@ -7,8 +7,6 @@ RSpec.describe "Posts", type: :request do
       get "/posts/"
       expect(response).to have_http_status(200)
     end
-
-
   end
 
   describe "GET /posts/new" do
