@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   get 'airlock/index'
-  root 'airlock#index'
 
   resources :posts
+  
+  root 'airlock#index'
+
+
 
 
 
