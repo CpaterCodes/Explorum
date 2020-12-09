@@ -1,1 +1,6 @@
-New Post? (WIP)
+New Post? (WIP)<br><br>
+
+<%= form_with(url: "/create", method: "post") do %>
+  <%= label_tag(:content, "Content to be entered:") %><br><br>
+  <%= text_field_tag(:content)%>
+<% end %>

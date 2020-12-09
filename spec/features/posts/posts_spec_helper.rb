@@ -1,9 +1,9 @@
 def user_attempts_post
-  visit posts_index_path
-  click_button "Generate Log"
+  visit posts_path
+  click_on "Generate Log"
 end
 
 def user_submits_post(content)
   fill_in "Log entry", with: content
-  click_button "Enter Log"
+  click_on "Enter Log"
 end
