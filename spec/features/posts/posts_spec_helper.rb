@@ -4,6 +4,6 @@ def user_attempts_post
 end
 
 def user_submits_post(content)
-  fill_in "Log entry", with: content
+  fill_in "content", with: content
   click_on "Enter Log"
 end
