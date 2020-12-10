@@ -1,24 +1,42 @@
-# README
+# EXPLORUM
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Here I am attempting to build a relatively basic full stack
+application using Ruby on Rails
 
-Things you may want to cover:
+**Specs and setup**
 
-* Ruby version
+Ruby version: 2.6.3
 
-* System dependencies
+Dependencies setup:
 
-* Configuration
+- Fork and clone this repo
+- Run 'bundle install' within the root
 
-* Database creation
+DB setup:
 
-* Database initialization
+- rails db:create
+- rails db:migrate
 
-* How to run the test suite
+Test procedure:
 
-* Services (job queues, cache servers, search engines, etc.)
+- run 'rspec'
 
-* Deployment instructions
+**Current objectives**
 
-* ...
+```
+As a User
+Because I am looking for a sit to log my thoughts
+I wish to visit the Explorum via the airlock [status: complete]
+```
+
+```
+As a User
+So that I may express my desire to leave a message to the world
+I wish to make posts [status: in progress]
+```
+
+```
+As a User
+So that I may witness the messages and chatter of others
+I wish to see all posts [status: pending]
+```
