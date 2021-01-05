@@ -6,7 +6,7 @@ RSpec.describe "creating posts", type: :feature do
   scenario "Attempt to post" do
     user_attempts_post
     expect(page).to have_content("Content to be entered:")
-    expect(page).to have_field("content")
+    expect(page).to have_field("post_content")
   end
 
   scenario "post appears on the timeline" do
