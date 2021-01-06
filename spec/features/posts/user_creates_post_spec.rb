@@ -11,7 +11,6 @@ RSpec.describe "creating posts", type: :feature do
 
   scenario "post appears on the timeline" do
     message = "Hello World and welcome to the explorum"
-    user_attempts_post
     user_submits_post(message)
     expect(page).to have_content(message)
   end
