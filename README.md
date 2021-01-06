@@ -1,7 +1,7 @@
 # EXPLORUM
 
-Here I am attempting to build a relatively basic full stack
-application using Ruby on Rails
+Here I am attempting to build a relatively basic full stack application using
+Ruby on Rails, in order to practice its use and revise some core concepts.
 
 **Specs and setup**
 
@@ -32,11 +32,17 @@ I wish to visit the Explorum via the airlock [status: complete]
 ```
 As a User
 So that I may express my desire to leave a message to the world
-I wish to make posts [status: in progress]
+I wish to make posts [status: complete]
 ```
 
 ```
 As a User
 So that I may witness the messages and chatter of others
-I wish to see all posts [status: pending]
+I wish to see all posts [status: complete]
+```
+```
+As a User
+So that I may have context
+I wish to see these posts with readably formatted timestamps
+[status: in progress]
 ```
