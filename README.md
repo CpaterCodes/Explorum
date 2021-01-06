@@ -1,7 +1,7 @@
 # EXPLORUM
 
-Here I am attempting to build a relatively basic full stack application using
-Ruby on Rails, in order to practice its use and revise some core concepts.
+Here I am attempting to build a relatively basic full stack application usingRuby on Rails, in order to practice its use and build upon my 
+understanding of the framework.
 
 **Specs and setup**
 
@@ -46,3 +46,6 @@ So that I may have context
 I wish to see these posts with readably formatted timestamps
 [status: in progress]
 ```
+
+I'm also hoping to properly understand and apply SASS in order to improve the look and feel of the web application (as it is currently very
+rugged and unrefined). However, I'm also crucially hoping to continue working on user stories and features.
