@@ -1,6 +1,8 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+$dark_teal: #1d4347;
+$vivid_orange: #ffcc00;
 
 * {
   border:none;
@@ -10,14 +12,14 @@
   margin: auto;
   width: 40%;
   height: 20%;
-  background-color: #ffcc00;
-  color: #1d4347;
+  background-color: $vivid_orange;
+  color: $dark_teal;
   padding:10px;
 }
 
 #post_content{
   width: 30%;
   height: 100px;
-  background-color: #ffcc00;
-  color: #1d4347;
+  background-color: $vivid_orange;
+  color: $dark_teal;
 }
