@@ -3,6 +3,7 @@ Posts! (WIP) <br><br>
 
 <% @posts.reverse.each do |post| %>
   <div class="post_body">
-    <%= post.content%>
-  </div><br>
+    <%= post.format_date(post.created_at) %>, <%= post.format_time(post.created_at) %><br>
+    <%= post.content %>
+  </div>
 <% end %>
