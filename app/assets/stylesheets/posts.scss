@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 $dark_teal: #1d4347;
-$vivid_orange: #ffcc00;
+$vivid_mint: #00ff99;
 
 * {
   border:none;
@@ -12,7 +12,7 @@ $vivid_orange: #ffcc00;
   margin: auto;
   width: 40%;
   height: 20%;
-  background-color: $vivid_orange;
+  background-color: $vivid_mint;
   color: $dark_teal;
   margin-bottom:1%;
   padding:1%;
@@ -21,6 +21,6 @@ $vivid_orange: #ffcc00;
 #post_content{
   width: 30%;
   height: 100px;
-  background-color: $vivid_orange;
+  background-color: $vivid_mint;
   color: $dark_teal;
 }

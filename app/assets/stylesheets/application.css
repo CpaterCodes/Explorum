@@ -18,13 +18,13 @@
 h2 {
   padding:20px;
   text-align: center;
-  background-color: #ffcc00;
+  background-color: #00ff99;
   color: #1d4347;
   height:60%;
 }
 
 * {
   background-color: #1d4347;
-  color: #ffcc00;
+  color: #00ff99;
   font-family: 'Courier new', monospace;
 }
