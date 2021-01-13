@@ -8,7 +8,7 @@ RSpec.describe "airlock", type: :feature do
 
   it 'Allows viewing of posts' do
     visit airlock_index_path
-    expect(page).to have_link('View Logs', href: '/posts/')
+    expect(page).to have_link('View Logs', href: posts_path)
   end
 
   it 'Takes user to creation of new post' do
