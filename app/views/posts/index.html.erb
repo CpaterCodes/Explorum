@@ -1,7 +1,8 @@
 
 <% @posts.reverse.each do |post| %>
   <div class="post_body">
-    <%= post.format_date(post.created_at) %>, <%= post.format_time(post.created_at) %><br>
-    <%= post.content %>
+    <%= post.format_date(post.created_at) %>; <%= post.format_time(post.created_at) %><br>
+    <%= post.content %><br><br>
+    Entered by: AnonymousUser
   </div>
 <% end %>

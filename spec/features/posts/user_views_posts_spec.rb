@@ -1,5 +1,6 @@
 require 'rails_helper'
 require_relative 'posts_spec_helper'
+require_relative '../users/users_spec_helper'
 
 RSpec.describe "viewing posts", type: :feature do
 
@@ -8,5 +9,11 @@ RSpec.describe "viewing posts", type: :feature do
     user_submits_post("It's time!")
     expect(page).to have_content("1|1|2020")
     expect(page).to have_content("12:00")
+  end
+
+  scenario "Find out user" do
+    full_sign_up('UserFriend', 'User@example.com', 'w0rdp4ss')
+    user_submits_post("Here I am!")
+    expect(page).to have_content("Entered by: UserFriend")
   end
 end
