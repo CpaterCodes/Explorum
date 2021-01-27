@@ -21,24 +21,27 @@ Test procedure:
 
 - run 'rspec'
 
-**Current objectives**
+**User Stories**
 
 ```
 As a User
 Because I am looking for a site to log my thoughts
-I wish to visit the Explorum via the airlock [status: complete]
+I wish to visit the Explorum via the airlock 
+[status: complete]
 ```
 
 ```
 As a User
 So that I may express my desire to leave a message to the world
-I wish to make logs [status: complete]
+I wish to make logs 
+[status: complete]
 ```
 
 ```
 As a User
 So that I may witness the messages and chatter of others
-I wish to see all logs [status: complete]
+I wish to see all logs 
+[status: complete]
 ```
 
 ```
@@ -52,15 +55,22 @@ I wish to see these logs with readably formatted timestamps
 As a User
 So that I can have a presence
 I wish to sign up
-[status: pending]
+[status: complete]
 ```
 
 ```
 As a User
 So that I can make use of this presence
 I wish to be able to log in and out
+[status: complete]
+```
+
+```
+As a User
+In order to clarify my meaning by trying again
+I wish to be able to delete logs that are mine
 [status: pending]
 ```
 
-I'm also hoping to properly understand and apply SASS in order to improve the look and feel of the web application (as it is currently very
-rugged and unrefined). However, I'm also crucially hoping to continue working on user stories and features.
+I'm also hoping to properly understand and apply SASS in order to improve the look and feel of the web application. 
+However, I'm also crucially hoping to continue working on user stories and features.
