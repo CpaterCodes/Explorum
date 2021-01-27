@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = current_user ? current_user.posts.create(post_params) : Post.new(post_params)
+    @post = posting_as_user?
     @post.save
     redirect_to posts_path
   end
@@ -17,6 +17,10 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:content, :user_id)
+  end
+
+  def posting_as_user?
+    current_user ? current_user.posts.create(post_params) : Post.new(post_params)
   end
 
 end
