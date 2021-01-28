@@ -26,21 +26,21 @@ Test procedure:
 ```
 As a User
 Because I am looking for a site to log my thoughts
-I wish to visit the Explorum via the airlock 
+I wish to visit the Explorum via the airlock
 [status: complete]
 ```
 
 ```
 As a User
 So that I may express my desire to leave a message to the world
-I wish to make logs 
+I wish to make logs
 [status: complete]
 ```
 
 ```
 As a User
 So that I may witness the messages and chatter of others
-I wish to see all logs 
+I wish to see all logs
 [status: complete]
 ```
 
@@ -69,8 +69,8 @@ I wish to be able to log in and out
 As a User
 In order to clarify my meaning by trying again
 I wish to be able to delete logs that are mine
-[status: pending]
+[status: complete]
 ```
 
-I'm also hoping to properly understand and apply SASS in order to improve the look and feel of the web application. 
+I'm also hoping to properly understand and apply SASS in order to improve the look and feel of the web application.
 However, I'm also crucially hoping to continue working on user stories and features.

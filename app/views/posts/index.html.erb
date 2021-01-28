@@ -3,6 +3,9 @@
   <div class="post_body">
     <%= post.format_date(post.created_at) %>; <%= post.format_time(post.created_at) %><br>
     <%= post.content %><br><br>
-    Entered by: <%= post.user_id ? post.name_user(post.user_id): 'n/a'%>
+    Entered by: <%= post.user_id ? post.name_user(post.user_id) : 'n/a' %>
+    <%- if current_user && post.user_id == current_user.id %>
+      || <%= link_to 'Erase Log', post_path(post), method: :delete %>
+    <% end %>
   </div>
 <% end %>
