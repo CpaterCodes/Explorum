@@ -72,5 +72,26 @@ I wish to be able to delete logs that are mine
 [status: complete]
 ```
 
+```
+As a User
+As I need an incentive to be a User
+I wish for posts to allow more characters when signed on
+[status: pending]
+```
+
+```
+As a User
+So I can further engage with the posts of others
+I wish to be able to leave comments
+[status: pending]
+```
+
+```
+As a User
+So I can get it right when engaging with other posts
+I wish to be able to delete my comments, but not others
+[status: pending]
+```
+
 I'm also hoping to properly understand and apply SASS in order to improve the look and feel of the web application.
 However, I'm also crucially hoping to continue working on user stories and features.
