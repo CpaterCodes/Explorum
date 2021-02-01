@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 
   def create
     @post = posting_as_user?
-    @post.save
+    @post.save unless @post.content.length > 50
     redirect_to posts_path
   end
 

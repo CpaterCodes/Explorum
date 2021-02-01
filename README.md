@@ -76,7 +76,7 @@ I wish to be able to delete logs that are mine
 As a User
 As I need an incentive to be a User
 I wish for posts to allow more characters when signed on
-[status: pending]
+[status: in progress]
 ```
 
 ```

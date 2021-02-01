@@ -15,4 +15,10 @@ RSpec.describe "creating posts", type: :feature do
     expect(page).to have_content(message)
   end
 
+  scenario "anonymous posts above 50 characters are not accepted" do
+    long_post = "a" * 51
+    user_submits_post(long_post)
+    expect(page).not_to have_content(long_post)
+  end
+
 end
