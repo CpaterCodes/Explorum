@@ -88,6 +88,13 @@ I wish to be able to leave comments
 
 ```
 As a User
+So I can follow conversations
+I wish to be able to view all comments under a post
+[status: pending]
+```
+
+```
+As a User
 So I can get it right when engaging with other posts
 I wish to be able to delete my comments, but not others
 [status: pending]
