@@ -2,6 +2,7 @@ class Post < ApplicationRecord
 
   belongs_to :user, optional: true
   validates :content, presence: true, length: { maximum: 300 }
+  validates :content, length: { maximum: 50 }, if: -> { user_id.nil? }
 
   def format_date(date)
     return "#{date.day}|#{date.month}|#{date.year}"
