@@ -36,3 +36,8 @@ h2 {
   color: #00ff99;
   font-family: 'Courier new', monospace;
 }
+
+input {
+  background-color: #00ff99;
+  color: #1d4347;
+}
