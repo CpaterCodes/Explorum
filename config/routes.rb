@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   get 'airlock/index'
 
   resources :posts
-  
+  resources :comments
+
   root 'airlock#index'
 
 
