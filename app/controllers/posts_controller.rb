@@ -26,7 +26,7 @@ class PostsController < ApplicationController
   end
 
   def posting_as_user?
-    current_user ? current_user.posts.create(post_params) : Post.new(post_params)
+    current_user ? current_user.posts.new(post_params) : Post.new(post_params)
   end
 
   def char_limit
