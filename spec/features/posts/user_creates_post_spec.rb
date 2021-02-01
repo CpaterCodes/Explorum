@@ -17,8 +17,21 @@ RSpec.describe "creating posts", type: :feature do
 
   scenario "anonymous posts above 50 characters are not accepted" do
     long_post = "a" * 51
+
     user_submits_post(long_post)
     expect(page).not_to have_content(long_post)
+  end
+
+  scenario "posts by registered users have a higher limit of 300" do
+    verbose_post = "a" * 200
+    absurd_post = "b" * 301
+    full_sign_up('VerboseFriend', 'DrVerbose@example.com', 'w0rdp4ss')
+
+    user_submits_post(verbose_post)
+    expect(page).to have_content(verbose_post)
+
+    user_submits_post(absurd_post)
+    expect(page).not_to have_content(absurd_post)
   end
 
 end

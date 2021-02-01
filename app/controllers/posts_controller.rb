@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 
   def create
     @post = posting_as_user?
-    @post.save unless @post.content.length > 50
+    @post.save unless @post.content.length > char_limit
     redirect_to posts_path
   end
 
@@ -27,6 +27,10 @@ class PostsController < ApplicationController
 
   def posting_as_user?
     current_user ? current_user.posts.create(post_params) : Post.new(post_params)
+  end
+
+  def char_limit
+    current_user ? 300 : 50
   end
 
 end
