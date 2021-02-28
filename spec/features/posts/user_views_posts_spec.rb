@@ -16,4 +16,9 @@ RSpec.describe "viewing posts", type: :feature do
     user_submits_post("Here I am!")
     expect(page).to have_content("Entered by: UserFriend")
   end
+
+  scenario "Anonymous posts display 'n/a'" do
+    user_submits_post("No one will ever know!")
+    expect(page).to have_content("Entered by: n/a")
+  end
 end

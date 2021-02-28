@@ -17,7 +17,7 @@ class Post < ApplicationRecord
   end
 
   def name_user(id)
-    User.find(id).username
+    id ? User.find(id).username : 'n/a'
   end
 
 end
