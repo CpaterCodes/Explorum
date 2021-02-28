@@ -83,21 +83,21 @@ I wish for posts to allow more characters when signed on
 As a User
 So I can further engage with the posts of others
 I wish to be able to leave comments
-[status: pending]
+[status: in progress]
 ```
 
 ```
 As a User
 So I can follow conversations
 I wish to be able to view all comments under a post
-[status: pending]
+[status: in progress]
 ```
 
 ```
 As a User
 So I can get it right when engaging with other posts
 I wish to be able to delete my comments, but not others
-[status: pending]
+[status: in progress]
 ```
 
 I'm also hoping to properly understand and apply SASS in order to improve the look and feel of the web application.
