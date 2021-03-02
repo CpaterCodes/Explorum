@@ -1,6 +1,6 @@
 
 <% @posts.reverse.each do |post| %>
-  <div class="post_body">
+  <div class="post_body" id="<%= post.id %>">
     <%= post.format_date(post.created_at) %>; <%= post.format_time(post.created_at) %><br>
     <%= post.content %><br><br>
     Entered by: <%= post.name_user(post.user_id) %>

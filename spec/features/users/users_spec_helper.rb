@@ -12,8 +12,10 @@ def sign_off
 end
 
 def sign_on(email, password)
+  visit user_session_path
   click_link('Sign on')
   fill_in 'user_email', with: email
   fill_in 'user_password', with: password
   click_button('Log in')
+  visit posts_path
 end
