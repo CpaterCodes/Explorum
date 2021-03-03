@@ -82,15 +82,15 @@ I wish for posts to allow more characters when signed on
 ```
 As a User
 So I can further engage with the posts of others
-I wish to be able to leave comments
-[status: in progress]
+I wish to be able to leave comments, but only when signed in
+[status: complete]
 ```
 
 ```
 As a User
 So I can follow conversations
 I wish to be able to view all comments under a post
-[status: in progress]
+[status: complete]
 ```
 
 ```
