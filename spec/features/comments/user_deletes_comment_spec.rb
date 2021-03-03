@@ -5,7 +5,7 @@ RSpec.describe "Delete a comment", type: :feature do
   scenario "Comment will be removed" do
     post = create(:post, content: 'I take comments')
     create(:comment, message: 'I am a comment', post: post, user: create(:user))
-    visit comments_path(post)
+    visit post_comments_path(post)
     click_on "Erase Comment"
     expect(page).not_to have_content("I am a comment")
   end
@@ -15,7 +15,7 @@ RSpec.describe "Delete a comment", type: :feature do
     create(:comment, message: 'I am a comment', post: post, user: create(:user))
     troublemaker = create(:user, username: 'Haha', email: 'chaos@example.com')
     sign_on('chaos@example.com', 'p4ssw0rd')
-    visit comments_path(post)
+    visit post_comments_path(post)
     expect(page).not_to have_link("Erase Comment")
   end
 

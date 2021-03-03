@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   get 'airlock/index'
 
-  resources :posts
-  resources :comments
+  resources :posts do
+    resources :comments, shallow: true
+  end
 
   root 'airlock#index'
 

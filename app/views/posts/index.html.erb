@@ -7,5 +7,6 @@
     <%- if current_user && post.user_id == current_user.id %>
       || <%= link_to 'Erase Log', post_path(post), method: :delete %>
     <% end %>
+    || <%= link_to 'View Comments', post_comments_path(post), method: :get %>
   </div>
 <% end %>
