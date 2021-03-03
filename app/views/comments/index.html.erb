@@ -1,15 +1,17 @@
-<div class="original_post">
+<div id="original_post">
   <%= @post.format_date(@post.created_at) %>; <%= @post.format_time(@post.created_at) %><br>
-  <%= @post.content %><br><br>
+  <%= @post.content %>
+  <div id="post_footer">
   Entered by: <%= @post.name_user(@post.user_id) %>
   <%- if current_user %>
   || <%= link_to 'Generate Comment', new_post_comment_path(@post), method: :get %>
   <% end %>
+  </div>
 </div>
 
 <br>
 <% @comments.reverse.each do |comment| %>
   <div class="comment_body" id="<%= comment.id %>">
-    <%= comment.message %>
+    <%= comment.message %><br><br>
   </div>
 <% end %>
