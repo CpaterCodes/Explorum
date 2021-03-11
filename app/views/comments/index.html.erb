@@ -12,6 +12,11 @@
 <br>
 <% @comments.reverse.each do |comment| %>
   <div class="comment_body" id="<%= comment.id %>">
-    <%= comment.message %><br><br>
+    <%= comment.message %>
+    <div class="comment_footer">
+      <%- if current_user && comment.user_id == current_user.id %>
+        <%= link_to 'Erase Comment', comment_path(comment), method: :delete %>
+      <% end %>
+    </div>
   </div>
 <% end %>

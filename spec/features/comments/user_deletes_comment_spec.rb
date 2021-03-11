@@ -13,7 +13,7 @@ RSpec.describe "Delete a comment", type: :feature do
   scenario "Comment will be removed" do
     sign_on('poster@example.com', 'p4ssw0rd')
     visit post_comments_path(@post)
-    click_on "Erase Comment"
+    click_on 'Erase Comment'
     expect(page).not_to have_content("I am a comment")
   end
 

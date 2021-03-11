@@ -90,14 +90,14 @@ I wish to be able to leave comments, but only when signed in
 As a User
 So I can follow conversations
 I wish to be able to view all comments under a post
-[status: complete]
+[status: peripheral features in progress]
 ```
 
 ```
 As a User
 So I can get it right when engaging with other posts
 I wish to be able to delete my comments, but not others
-[status: in progress]
+[status: complete]
 ```
 
 I'm also hoping to properly understand and apply SASS in order to improve the look and feel of the web application.

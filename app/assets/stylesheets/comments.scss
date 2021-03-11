@@ -4,7 +4,7 @@
 $dark_teal: #1d4347;
 $vivid_mint: #00ff99;
 
-#original_post, #post_footer {
+#original_post, #post_footer, {
   background-color: $vivid_mint;
   padding: 1%;
   color: $dark_teal;
@@ -29,7 +29,7 @@ $vivid_mint: #00ff99;
   background-color: $vivid_mint;
   color: $dark_teal;
   margin-bottom:1%;
-  padding:1%;
+  padding: 1%;
   overflow-wrap: break-word;
 }
 
@@ -38,4 +38,11 @@ $vivid_mint: #00ff99;
   height: 100px;
   background-color: $vivid_mint;
   color: $dark_teal;
+}
+
+.comment_footer {
+  background-color: $vivid_mint;
+  color: $dark_teal;
+  bottom: 0;
+  left: 1%;
 }

@@ -1,20 +1,27 @@
 class CommentsController < ApplicationController
-  before_action :get_post
 
   def index
+    get_post
     @comments = @post.comments.all
   end
 
   def new
+    get_post
     @comment = @post.comments.new
   end
 
   def create
+    get_post
     @comment = @post.comments.build(comment_params)
     @comment.save
     redirect_to post_comments_path(@post)
   end
 
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+    redirect_to post_comments_path(@comment.post)
+  end
   private
 
   def get_post
