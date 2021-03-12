@@ -1,8 +1,8 @@
 <div id="original_post">
-  <%= @post.format_date(@post.created_at) %>; <%= @post.format_time(@post.created_at) %><br>
+  <%= date(@post.created_at) %>; <%= time(@post.created_at) %><br>
   <%= @post.content %>
   <div id="post_footer">
-  Entered by: <%= @post.user ? @post.user.username : 'n/a'%>
+  Entered by: <%= author_of(@post)%>
   <%- if current_user %>
   || <%= link_to 'Generate Comment', new_post_comment_path(@post), method: :get %>
   <% end %>
@@ -12,10 +12,12 @@
 <br>
 <% @comments.reverse.each do |comment| %>
   <div class="comment_body" id="<%= comment.id %>">
+    <%= date(comment.created_at)%>; <%= time(comment.created_at) %><br>
     <%= comment.message %>
     <div class="comment_footer">
+      Entered by: <%= author_of(comment) %>
       <%- if current_user && comment.user_id == current_user.id %>
-        <%= link_to 'Erase Comment', comment_path(comment), method: :delete %>
+      || <%= link_to 'Erase Comment', comment_path(comment), method: :delete %>
       <% end %>
     </div>
   </div>

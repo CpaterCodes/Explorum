@@ -1,9 +1,9 @@
 
 <% @posts.reverse.each do |post| %>
   <div class="post_body" id="<%= post.id %>">
-    <%= post.format_date(post.created_at) %>; <%= post.format_time(post.created_at) %><br>
+    <%= date(post.created_at) %>; <%= time(post.created_at) %><br>
     <%= post.content %><br><br>
-    Entered by: <%= post.user ? post.user.username : 'n/a'%>
+    Entered by: <%= author_of(post) %>
     <%- if current_user && post.user_id == current_user.id %>
       || <%= link_to 'Erase Log', post_path(post), method: :delete %>
     <% end %>
