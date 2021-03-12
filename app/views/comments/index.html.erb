@@ -2,7 +2,7 @@
   <%= @post.format_date(@post.created_at) %>; <%= @post.format_time(@post.created_at) %><br>
   <%= @post.content %>
   <div id="post_footer">
-  Entered by: <%= @post.name_user(@post.user_id) %>
+  Entered by: <%= @post.user ? @post.user.username : 'n/a'%>
   <%- if current_user %>
   || <%= link_to 'Generate Comment', new_post_comment_path(@post), method: :get %>
   <% end %>

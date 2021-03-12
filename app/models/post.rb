@@ -16,8 +16,4 @@ class Post < ApplicationRecord
     return output
   end
 
-  def name_user(id)
-    id ? User.find(id).username : 'n/a'
-  end
-
 end
