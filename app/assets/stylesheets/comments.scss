@@ -1,0 +1,48 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$dark_teal: #1d4347;
+$vivid_mint: #00ff99;
+
+#original_post, #post_footer, {
+  background-color: $vivid_mint;
+  padding: 1%;
+  color: $dark_teal;
+}
+
+#original_post {
+  position: relative;
+    margin: auto;
+    width: 60%;
+    height: 100px;
+}
+#post_footer{
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+}
+
+.comment_body {
+  margin: auto;
+  width: 30%;
+  height: 10%;
+  background-color: $vivid_mint;
+  color: $dark_teal;
+  margin-bottom:1%;
+  padding: 1%;
+  overflow-wrap: break-word;
+}
+
+#comment_message {
+  width: 30%;
+  height: 100px;
+  background-color: $vivid_mint;
+  color: $dark_teal;
+}
+
+.comment_footer {
+  background-color: $vivid_mint;
+  color: $dark_teal;
+  bottom: 0;
+  left: 1%;
+}

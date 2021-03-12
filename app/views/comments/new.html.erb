@@ -1,0 +1,7 @@
+
+<%= form_with model: [@post, @post.comments.build] do |form| %>
+  <%= form.label(:message, "Message to be entered:") %><br><br>
+  <%= form.hidden_field :user_id, value: current_user.id %>
+  <%= form.text_area :message %> <br>
+  <%= form.submit "Enter Comment"%>
+<% end %>

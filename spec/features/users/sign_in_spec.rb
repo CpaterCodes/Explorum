@@ -1,4 +1,5 @@
 require 'rails_helper'
+require_relative 'users_spec_helper'
 
 RSpec.describe "Sign in as a returning user", type: :feature do
 

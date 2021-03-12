@@ -5,19 +5,19 @@ require_relative '../users/users_spec_helper'
 RSpec.describe "deleting posts", type: :feature do
 
   scenario "User deletes own post" do
-    full_sign_up('MistakesWereMade', 'clumsy@example.com', 'p4ssw0rd')
-    user_submits_post('aWHOOPS')
+    create(:post, content: 'aWHOOPS', user: create(:user))
+    visit posts_path
+    expect(page).to have_content('aWHOOPS')
+    sign_on('bot@example.com', 'p4ssw0rd')
     click_link('Erase Log')
     expect(page).not_to have_content('aWHOOPS')
   end
 
   scenario "User cannot delete other posts" do
-    full_sign_up('DontTryIt', 'cautious@example.com', 'w0rdp4ss')
-    user_submits_post('Nice try')
-    expect(page).to have_link('Erase Log')
-    sign_off
-    full_sign_up('IWillAnyways', 'sneaky@example.com', 'p4ssw0rd')
-    visit posts_path
+    create(:post, content: "Don't try it!", user: create(:user))
+    current_user = create(:user, username: 'IWillAnyways', email: 'mischief@example.com')
+    sign_on('mischief@example.com', 'p4ssw0rd')
+    expect(page).to have_content("Don't try it!")
     expect(page).not_to have_link('Erase Log')
   end
 
